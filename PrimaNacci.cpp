@@ -22,6 +22,20 @@ bool bilPrim(int n)
 }
 bool bilFibon(int x)
 {
+    if (x < 0)
+
+        return false;
+
+    int a = 0;
+    int b = 1;
+    while (a < x)
+    {
+        int temp = a + b;
+        a = b;
+        b = temp;
+    }
+    return (a == x);
+    return true;
 }
 
 int main()
@@ -53,6 +67,7 @@ int main()
             {
                 cout << "\n";
                 cout << angkanya << " adalah bilangan prima" << endl;
+                break;
             }
             else
                 cout << "\n";
@@ -64,11 +79,13 @@ int main()
             if (bilFibon(angkanya))
             {
                 cout << "\n";
-                cout << angkanya << " adalah bilangan fibonacci";
+                cout << angkanya << " adalah bilangan fibonacci\n";
+
+                break;
             }
             else
                 cout << "\n";
-            cout << angkanya << " bukanlah bilangan fibonacci";
+            cout << angkanya << " bukanlah bilangan fibonacci\n";
 
             break;
         default:

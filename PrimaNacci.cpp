@@ -20,6 +20,9 @@ bool bilPrim(int n)
     }
     return true;
 }
+bool bilFibon(int x)
+{
+}
 
 int main()
 {
@@ -28,7 +31,7 @@ int main()
     {
 
         cout << "\n==== PENGECEKAN BILANGAN =====" << endl;
-        cout << "=== Mau Ngecek Apa Nih? ===\n"
+        cout << "===== Mau Ngecek Apa Nih? ====\n"
              << endl;
         cout << " 1. Mengecek Bilangan Prima" << endl;
         cout << " 2. Mengecek Bilangan Fibonacci" << endl;
@@ -52,18 +55,25 @@ int main()
                 cout << angkanya << " adalah bilangan prima" << endl;
             }
             else
-                cout << angkanya << " bukanlah bilangan prima" << endl;
+                cout << "\n";
+            cout << angkanya << " bukanlah bilangan prima" << endl;
             break;
         case 2:
             cout << "Masukkan angka : ";
             cin >> angkanya;
-            cout << "\n";
-            cout << angkanya << " adalah bilangan fibonacci";
+            if (bilFibon(angkanya))
+            {
+                cout << "\n";
+                cout << angkanya << " adalah bilangan fibonacci";
+            }
+            else
+                cout << "\n";
+            cout << angkanya << " bukanlah bilangan fibonacci";
 
             break;
         default:
             cout << endl;
-            cout << "PILIHAN TIDAK VALID\n";
+            cout << "     PILIHAN TIDAK VALID\n";
             cout << endl;
         }
     }

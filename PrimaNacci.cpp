@@ -11,7 +11,8 @@ int main()
 
     while (true)
     {
-        cout << "==== PENGECEKAN ANGKA =====" << endl;
+
+        cout << "\n==== PENGECEKAN BILANGAN =====" << endl;
         cout << "=== Mau Ngecek Apa Nih? ===\n"
              << endl;
         cout << " 1. Mengecek Bilangan Prima" << endl;
@@ -30,10 +31,16 @@ int main()
         case 1:
             cout << "Masukkan angka : ";
             cin >> angkanya;
+            cout << "\n";
+            cout << angkanya << " adalah bilangan prima" << endl;
+
             break;
         case 2:
             cout << "Masukkan angka : ";
             cin >> angkanya;
+            cout << "\n";
+            cout << angkanya << " adalah bilangan fibonacci";
+
             break;
         default:
             cout << endl;

@@ -18,17 +18,19 @@ int main()
         cout << "Masukkan Pilihan Anda (0,1,2) : ";
         cin >> pilihanopsi;
 
-        if (angkanya = 1)
+        if (pilihanopsi = 1)
         {
             cout << "Masukkan angka : ";
             cin >> angkanya;
+            break;
         }
-        else if (angkanya = 2)
+        else if (pilihanopsi = 2)
         {
             cout << "Masukkan angka : ";
             cin >> angkanya;
+            break;
         }
-        else if (angkanya = 0)
+        else if (pilihanopsi = 0)
         {
             return 0;
         }

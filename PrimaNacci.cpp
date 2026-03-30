@@ -16,5 +16,15 @@ int main()
         cout << "===========================" << endl;
         cout << "Masukkan Pilihan Anda (0,1,2) : ";
         cin >> angkanya;
+
+        if (angkanya = 1)
+        {
+        }
+        else if (angkanya = 2)
+        {
+        }
+        else if (angkanya = 0)
+        {
+        }
     }
 }

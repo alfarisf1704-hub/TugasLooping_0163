@@ -4,6 +4,7 @@ using namespace std;
 int main()
 {
     int angkanya;
+    int pilihanopsi;
     string statusAngka;
 
     while (true)
@@ -15,16 +16,23 @@ int main()
         cout << " 0. Keluar" << endl;
         cout << "===========================" << endl;
         cout << "Masukkan Pilihan Anda (0,1,2) : ";
-        cin >> angkanya;
+        cin >> pilihanopsi;
 
         if (angkanya = 1)
         {
+            cout << "Masukkan angka : ";
+            cin >> angkanya;
         }
         else if (angkanya = 2)
         {
+            cout << "Masukkan angka : ";
+            cin >> angkanya;
         }
         else if (angkanya = 0)
         {
+            return 0;
         }
+        else
+            cout << "PILIHAN TIDAK VALID";
     }
 }

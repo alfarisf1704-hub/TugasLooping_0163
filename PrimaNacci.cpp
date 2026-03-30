@@ -21,27 +21,24 @@ void input()
 
 void pengecekan()
 {
-    while (true)
+    switch (pilihanopsi)
     {
-        switch (pilihanopsi)
-        {
-        case 0:
-            return;
-            break;
-        case 1:
-            cout << "Masukkan angka : ";
-            cin >> angkanya;
-            break;
-        case 2:
-            cout << "Masukkan angka : ";
-            cin >> angkanya;
-            break;
-        default:
-            cout << endl;
-            cout << "PILIHAN TIDAK VALID";
-            cout << endl;
-            break;
-        }
+    case 0:
+        return;
+        break;
+    case 1:
+        cout << "Masukkan angka : ";
+        cin >> angkanya;
+        break;
+    case 2:
+        cout << "Masukkan angka : ";
+        cin >> angkanya;
+        break;
+    default:
+        cout << endl;
+        cout << "PILIHAN TIDAK VALID";
+        cout << endl;
+        break;
     }
 }
 
@@ -51,6 +48,9 @@ void output()
 
 int main()
 {
-    input();
-    pengecekan();
+    while (true)
+    {
+        input();
+        pengecekan();
+    }
 }

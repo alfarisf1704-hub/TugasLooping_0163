@@ -1,11 +1,11 @@
 #include <iostream>
 using namespace std;
-// Deklarasi Variabel Global
-int angkanya;
-string statusAngka;
-// prosedur input
-void input()
+
+int main()
 {
+    int angkanya;
+    string statusAngka;
+
     while (true)
     {
         cout << "==== PENGECEKAN ANGKA =====" << endl;
@@ -17,9 +17,4 @@ void input()
         cout << "Masukkan Pilihan Anda (0,1,2) : ";
         cin >> angkanya;
     }
-}
-
-int main()
-{
-    input();
 }

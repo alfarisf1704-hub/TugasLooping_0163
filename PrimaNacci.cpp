@@ -1,10 +1,18 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 // Deklarasi Variabel global
 int angkanya;
 int pilihanopsi;
 string statusAngka;
+
+bool bilPrim(int n)
+{
+    if (n <= 1)
+        return false;
+    for (int i = 2; i <=)
+}
 
 int main()
 {
@@ -31,9 +39,13 @@ int main()
         case 1:
             cout << "Masukkan angka : ";
             cin >> angkanya;
-            cout << "\n";
-            cout << angkanya << " adalah bilangan prima" << endl;
-
+            if (bilPrim(angkanya))
+            {
+                cout << "\n";
+                cout << angkanya << " adalah bilangan prima" << endl;
+            }
+            else
+                cout << angkanya << " bukanlah bilangan prima" << endl;
             break;
         case 2:
             cout << "Masukkan angka : ";

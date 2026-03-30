@@ -18,23 +18,28 @@ int main()
         cout << "Masukkan Pilihan Anda (0,1,2) : ";
         cin >> pilihanopsi;
 
-        if (pilihanopsi = 1)
+        if (pilihanopsi == 1)
         {
             cout << "Masukkan angka : ";
             cin >> angkanya;
             break;
         }
-        else if (pilihanopsi = 2)
+
+        else if (pilihanopsi == 2)
         {
             cout << "Masukkan angka : ";
             cin >> angkanya;
             break;
         }
-        else if (pilihanopsi = 0)
+
+        else if (pilihanopsi == 0)
         {
             return 0;
         }
+
         else
+        {
             cout << "PILIHAN TIDAK VALID";
+        }
     }
 }

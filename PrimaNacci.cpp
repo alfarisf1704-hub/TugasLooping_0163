@@ -6,9 +6,9 @@ int angkanya;
 int pilihanopsi;
 string statusAngka;
 
-// prosedur input
-void input()
+int main()
 {
+
     while (true)
     {
         cout << "==== PENGECEKAN ANGKA =====" << endl;
@@ -19,38 +19,25 @@ void input()
         cout << "===========================" << endl;
         cout << "Masukkan Pilihan Anda (0/1/2) : ";
         cin >> pilihanopsi;
+
+        switch (pilihanopsi)
+        {
+        case 0:
+            return;
+            break;
+        case 1:
+            cout << "Masukkan angka : ";
+            cin >> angkanya;
+            break;
+        case 2:
+            cout << "Masukkan angka : ";
+            cin >> angkanya;
+            break;
+        default:
+            cout << endl;
+            cout << "PILIHAN TIDAK VALID";
+            cout << endl;
+            break;
+        }
     }
-}
-
-void pengecekan()
-{
-    switch (pilihanopsi)
-    {
-    case 0:
-        return;
-        break;
-    case 1:
-        cout << "Masukkan angka : ";
-        cin >> angkanya;
-        break;
-    case 2:
-        cout << "Masukkan angka : ";
-        cin >> angkanya;
-        break;
-    default:
-        cout << endl;
-        cout << "PILIHAN TIDAK VALID";
-        cout << endl;
-        break;
-    }
-}
-
-void output()
-{
-}
-
-int main()
-{
-    input();
-    pengecekan();
 }

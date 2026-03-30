@@ -48,3 +48,9 @@ void pengecekan()
 void output()
 {
 }
+
+int main()
+{
+    input();
+    pengecekan();
+}
